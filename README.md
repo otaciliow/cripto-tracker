@@ -56,6 +56,8 @@ A estrutura do projeto é a seguinte:
 ```bash
   /src
     /assets           # Imagens e outros recursos estáticos
+    /components       # Componentes do projeto
+    /pages            # Páginas do projeto
     App.tsx           # Componente raiz da aplicação
     main.tsx          # Ponto de entrada da aplicação
   /public
