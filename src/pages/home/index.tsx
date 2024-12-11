@@ -24,7 +24,7 @@ export function Home() {
                 </thead>
                 <tbody id="cripto-table-body">
                     <tr className={styles.row}>
-                        <td className={styles.label} data-label="">
+                        <td className={styles.label} data-label="Moeda">
                             <Link to="/detail/:id">
                                 <span>Bitcoin</span> | BTC
                             </Link>
@@ -33,7 +33,7 @@ export function Home() {
                         <td className={styles.label} data-label="Preço">8.000</td>
                         <td className={styles.label} data-label="Volume">2B</td>
                         <td className={styles.label} data-label="Mudança 24h">
-                            <span className="profit">1.2323</span>
+                            <span className={styles.profit}>1.23</span>
                         </td>
                     </tr>
                 </tbody>

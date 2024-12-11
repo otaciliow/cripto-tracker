@@ -20,3 +20,101 @@
 .form button {
     background: transparent;
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 16px;
+    margin: .5em 0 .75em;
+}
+
+th {
+    color: #fff;
+}
+
+.row {
+    background-color: #1c1d20;
+}
+
+td:first-child, th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+td:last-child, th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.row .label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.row .label .profit {
+    color: #12f98a;
+}
+
+.row .label .loss {
+    color: #f91257;
+}
+
+@media screen and (max-width: 720px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        broder: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        padding: 0;
+    }
+
+    .row {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-bottom: 14px;
+    }
+
+    table td {
+        border-bottom: 1px solid rgba(221,221,221,.17);
+        display: block;
+        text-align: right;
+        font-size: 14px;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    td:first-child, th:first-child {
+        border-radius: 0;
+    }
+
+    td:last-child, th:last-child {
+        border-radius: 0;
+    }
+}
