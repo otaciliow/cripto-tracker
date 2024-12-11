@@ -3,7 +3,7 @@ import { BsSearch } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './home.module.css';
 
-interface ICoinProps {
+export interface ICoinProps {
     id: string;
     name: string;
     symbol: string;
@@ -89,8 +89,8 @@ export function Home() {
 
     return (
         <main className={styles.container}>
-            <form className={styles.form} onSubmit={handleSubmit}>
-                <input type="text" placeholder="Digite o nome da moeda... (Ex.: Bitcoin)" value={input} onChange={(e) => setInput(e.target.value)} />
+            <form id="form-search" className={styles.form} onSubmit={handleSubmit}>
+                <input type="text" name="currency" placeholder="Digite o nome da moeda... (Ex.: Bitcoin)" value={input} onChange={(e) => setInput(e.target.value)} />
                 <button>
                     <BsSearch size={30} color="#FFF"/>
                 </button>
@@ -110,7 +110,7 @@ export function Home() {
                     {coins.length > 0 && coins.map((item) => (
                         <tr className={styles.row} key={item.id}>
                             <td className={styles.label} data-label="Moeda">
-                                <Link to={`/detail/${item.symbol}`} className={styles.currencyName}>
+                                <Link to={`/detail/${item.id}`} className={styles.currencyName}>
                                     <img className={styles.logo} src={`https://assets.coincap.io/assets/icons/${item.symbol.toLowerCase()}@2x.png`} alt={`Logo ${item.name}`} />
                                     <span>{item.name}</span> | {item.symbol}
                                 </Link>
