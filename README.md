@@ -1,6 +1,6 @@
 # Projeto React com Vite
 
-Este é um projeto simples utilizando React e Vite, uma ferramenta de build rápida e moderna para desenvolvimento front-end. Sua finalidade é exibir para o usuário as últimas informações das principais criptomoedas disponíveis ao redor do mundo, com informações como valor, símbolo, variação de preço e volume.
+Este é um projeto simples utilizando React e Vite, uma ferramenta de build rápida e moderna para desenvolvimento front-end. Sua finalidade é exibir para o usuário as últimas informações das principais criptomoedas disponíveis ao redor do mundo, com informações como valor, símbolo, variação de preço e volume. Isso é feito através de o consumo da API CoinCap 2.0.
 
 ### Projeto com caráter educativo, para aprimorar meus conhecimentos em React, Vite e Typescript
 
