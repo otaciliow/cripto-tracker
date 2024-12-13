@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import { ICoinProps } from '../home';
+import { ICoinProps } from '../../shared/coinProps.interface';
 
 import styles from './detail.module.css';
 import { BiInfoSquare } from 'react-icons/bi';
