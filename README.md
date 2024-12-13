@@ -55,6 +55,7 @@ A estrutura do projeto é a seguinte:
 
 ```bash
   /src
+    /shared           # Interfaces compartilhadas entre mais de um componente
     /assets           # Imagens e outros recursos estáticos
     /components       # Componentes do projeto
     /pages            # Páginas do projeto
