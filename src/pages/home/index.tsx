@@ -1,25 +1,8 @@
 import { useState, useEffect, FormEvent } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
+import { ICoinProps } from '../../shared/coinProps.interface';
 import styles from './home.module.css';
-
-export interface ICoinProps {
-    id: string;
-    name: string;
-    symbol: string;
-    priceUsd: string;
-    vwap24hr: string;
-    changePercent24Hr: string;
-    rank: string;
-    supply: string;
-    maxSupply: string;
-    marketCapUsd: string;
-    volumeUsd24Hr: string;
-    explorer: string;
-    formatedPrice?: string;
-    formatedMarket?: string;
-    formatedVolume?: string;
-}
 
 interface IDataProp {
     data: ICoinProps[]
